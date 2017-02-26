@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "928208223057",
+    "firebase_url": "https://meishikr.firebaseio.com",
+    "project_id": "meishikr",
+    "storage_bucket": "meishikr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928208223057:android:76ad4dcd6a669d60",
+        "android_client_info": {
+          "package_name": "com.meishikr.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "928208223057-qq6tnjudlh96uev88ssggh5d1t773rr3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALNwtWco9zGCjMv3DRcqhx17OQPrWZT_I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

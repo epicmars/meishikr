@@ -1,0 +1,14 @@
+allprojects {
+
+}
+
+ext {
+    // Android
+    androidCompileSdkVersion = 25
+    androidBuildToolsVersion = "25.0.1"
+    androidMinSdkVersion = 19
+    androidTargetSdkVersion = 25
+    androidSupportLibraryVersion = '25.0.1'
+
+}
+

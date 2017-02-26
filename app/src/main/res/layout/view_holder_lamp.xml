@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+            name="data"
+            type="com.meishikr.app.domain.entity.post.Lamp"/>
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.GridLayout
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                app:orientation="horizontal"
+                app:rowCount="6"
+                app:columnCount="5"
+                app:useDefaultMargins="true">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image1"
+                    app:placeholderImage="@drawable/ic_image_placeholder"
+                    app:placeholderImageScaleType="fitCenter"
+
+                    app:layout_row="0"
+                    app:layout_column="0"
+                    app:layout_rowSpan="5"
+                    app:layout_columnSpan="3"
+                    app:layout_rowWeight="2"
+                    app:layout_columnWeight="3"
+
+                    app:actualImageUri="@{data.photos[0].url}"
+                    />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image3"
+                    app:placeholderImage="@drawable/ic_image_placeholder"
+                    app:placeholderImageScaleType="fitCenter"
+
+                    app:layout_row="3"
+                    app:layout_column="3"
+                    app:layout_rowSpan="3"
+                    app:layout_columnSpan="2"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="2"
+
+                    app:actualImageUri="@{data.photos[1].url}"
+                    />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image2"
+                    app:placeholderImage="@drawable/ic_image_placeholder"
+                    app:placeholderImageScaleType="fitCenter"
+
+                    app:layout_row="0"
+                    app:layout_column="3"
+                    app:layout_rowSpan="3"
+                    app:layout_columnSpan="2"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="2"
+
+                    app:actualImageUri="@{data.photos[2].url}"
+                    />
+
+            </android.support.v7.widget.GridLayout>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/lamp_edit_hint"
+                android:textAllCaps="false"
+                android:text="@{data.content}"/>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</layout>

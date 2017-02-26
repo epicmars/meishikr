@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">Meishikr</string>
+    <string name="meishikr">美食客</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_blog">BlogActivity</string>
+    <string name="title_activity_post">PostActivity</string>
+    <string name="title_activity_login">@string/login</string>
+    <string name="title_activity_register">@string/register</string>
+
+    <!--主页-->
+    <string name="home">主页</string>
+    <string name="map">地图</string>
+    <string name="post">发布</string>
+    <string name="rank">排行榜</string>
+    <string name="lamp">走马灯</string>
+    <string name="topic">话题</string>
+    <string name="mine">我的</string>
+
+    <string-array name="post_types">
+        <item>美食客</item>
+        <item>走马灯·照片</item>
+        <item>走马灯·视频</item>
+    </string-array>
+
+    <!-- 菜单 -->
+    <string name="setting">设置</string>
+    <string name="my_articles">我的文章</string>
+
+    <!-- 博客编辑 -->
+    <string name="location">位置</string>
+    <string name="say_something">说点什么</string>
+
+    <!-- 博客编辑设置 -->
+    <string name="record_location_automatic">自动记录位置</string>
+
+    <string name="lamp_edit_hint">人来人往，熙熙攘攘，游万千风景，犹走马灯也。</string>
+
+    <!-- 位置搜索 -->
+    <string name="search">搜索</string>
+    <string name="hint_search_location">搜索位置</string>
+
+    <!-- Strings related to login -->
+    <string name="telephone">手机号</string>
+    <string name="email">邮箱</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="password_confirm">密码确认</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">@string/register</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_blogitem_list">blog_Items</string>
+    <string name="title_blogitem_detail">BlogItem Detail</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login_test_temp">Sign in</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_blog_preview">BlogPreviewActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my_location">MyLocationActivity</string>
+    <string name="title_activity_location_search">LocationSearchActivity</string>
+    <string name="title_activity_lamp_edit">LampEditActivity</string>
+    <string name="title_activity_shooting">ShootingActivity</string>
+</resources>

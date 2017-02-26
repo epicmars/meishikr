@@ -1,0 +1,69 @@
+apply plugin: 'com.android.library'
+apply plugin: 'org.greenrobot.greendao'
+
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+
+        def DATABASE_NAME = "DATABASE_NAME"
+        def DATABASE_VERSION = "DATABASE_VERSION"
+        def BASE_URL = "BASE_URL"
+
+        release {
+            minifyEnabled false
+//            runProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", DATABASE_NAME, "\"meishikr.db\""
+            buildConfigField "int", DATABASE_VERSION, "1"
+            buildConfigField "String", BASE_URL, "\"http://139.196.219.127/api/v1.0/\""
+        }
+
+        debug {
+            buildConfigField "String", DATABASE_NAME, "\"meishikr.db\""
+            buildConfigField "int", DATABASE_VERSION, "1"
+            buildConfigField "String", BASE_URL, "\"http://139.196.219.127/api/v1.0/\""
+        }
+    }
+}
+
+greendao {
+    schemaVersion 1
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+
+    compile project(":Common")
+    compile project(":Component")
+    compile project(':Domain')
+
+    /**
+     * realm 无自增id，不够灵活
+     * dbflow 引入包过多，注解处理与类生成过慢
+     */
+    // green dao
+    compile 'org.greenrobot:greendao:3.2.0'
+    // stetho
+    compile 'com.facebook.stetho:stetho:1.4.1'
+    compile 'com.facebook.stetho:stetho-okhttp3:1.4.1'
+
+    // jsoup HTML parser library @ http://jsoup.org/
+    compile 'org.jsoup:jsoup:1.10.1'
+
+    // firebase
+    compile 'com.google.firebase:firebase-core:9.6.1'
+//    compile 'com.google.firebase:firebase-database:9.6.1'
+//    compile 'com.google.firebase:firebase-storage:9.6.1'
+    compile 'com.google.firebase:firebase-crash:9.6.1'
+}

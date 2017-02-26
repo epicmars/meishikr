@@ -1,0 +1,46 @@
+apply plugin: 'java'
+
+jar{
+    targetCompatibility = 1.7
+    sourceCompatibility = 1.7
+}
+
+configurations {
+    provided
+
+}
+
+sourceSets {
+    main {
+        compileClasspath += configurations.provided
+    }
+}
+
+dependencies {
+    // Common模块中可引用需要的三方库，用于具体实现，接口则在Interfaces中定义
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    // fastjson
+    compile 'com.alibaba:fastjson:1.1.52.android'
+    // TODO 可替换的ORM模块？字段注解？
+    // rx
+    compile 'io.reactivex:rxjava:1.1.0'
+    // gson
+//    compile 'com.google.code.gson:gson:2.8.0'
+
+    // retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+    // jose & jwt
+    compile 'com.nimbusds:nimbus-jose-jwt:4.18'
+    // TODO dragger
+    // Error:The number of method references in a .dex file cannot exceed 64K.
+    // Learn how to resolve this issue at https://developer.android.com/tools/building/multidex.html
+//    apt 'com.google.dagger:dagger-compiler:2.2'
+    provided 'javax.annotation:jsr250-api:1.0'
+    compile 'com.google.dagger:dagger:2.4'
+
+}
+

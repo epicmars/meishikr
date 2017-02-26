@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/content_my_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_light"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.meishikr.app.view.activity.lbs.MyLocationActivity"
+        tools:showIn="@layout/activity_my_location">
+
+        <com.liaoinstan.springview.widget.SpringView
+            android:id="@+id/spring"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            app:type="follow">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:listitem="@layout/view_holder_my_location"
+                />
+        </com.liaoinstan.springview.widget.SpringView>
+
+
+    </RelativeLayout>
+</layout>

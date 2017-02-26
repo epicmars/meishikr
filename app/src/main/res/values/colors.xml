@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主题色 -->
+    <color name="colorPrimary">#f44336</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <!--<color name="colorAccent">#FFFFFF</color>-->
+    <color name="colorAccent">#ffeb3b</color>
+
+    <!-- meterial design -->
+    <color name="primary">#F44336</color>
+    <color name="primary_dark">#D32F2F</color>
+    <color name="primary_light">#FFCDD2</color>
+    <color name="accent">#ff5252</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="background_light">#fffafafa</color>
+    <color name="background">#CDCDCD</color>
+
+    <!-- 基本色 -->
+    <color name="red">#F44336</color>
+    <color name="blue">#2196F3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#BDBDBD</color>
+
+    <!-- 背景色 -->
+    <color name="bg_dark">#FF424242</color>
+
+    <!-- 前景色 -->
+    <color name="fg_black">#66000000</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>

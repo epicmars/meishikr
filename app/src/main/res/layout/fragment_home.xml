@@ -1,0 +1,14 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activity.home.HomeActivity"
+        tools:showIn="@layout/activity_home">
+
+        <include
+            android:id="@+id/content"
+            layout="@layout/content_home" />
+    </FrameLayout>
+</layout>

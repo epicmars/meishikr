@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.meishikr.HomeActivity">
+
+    <item android:id="@+id/action_map"
+        android:title="@string/map"
+        android:icon="@drawable/btn_trace_mark"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_post"
+        android:title="@string/post"
+        android:icon="@drawable/new_blog_96"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/setting"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_register"
+        android:orderInCategory="100"
+        android:title="@string/register"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_login"
+        android:orderInCategory="100"
+        android:title="@string/login"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_my_articles"
+        android:orderInCategory="100"
+        android:title="@string/my_articles"
+        app:showAsAction="never" />
+</menu>

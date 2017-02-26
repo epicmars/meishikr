@@ -1,0 +1,97 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto">
+
+    <merge android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.amap.api.maps.MapView
+                    android:id="@+id/map_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageButton
+                    android:id="@+id/btn_post_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mark_visit"
+                    android:background="@null" />
+            </FrameLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cd_locate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="8dp"
+                card:elevation="4dp"
+                android:padding="8dp">
+
+                <ImageButton
+                    android:id="@+id/btn_locate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/mode_normal"
+                    android:background="@null" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cd_trace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_above="@id/cd_locate"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                card:elevation="4dp">
+
+                <CheckBox
+                    android:id="@+id/cb_trace_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:button="@drawable/btn_trace_mark"
+                    android:background="@null"
+                    android:checked="false" />
+
+                <ImageButton
+                    android:id="@+id/btn_eagle_eye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/trace_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                card:elevation="4dp"
+                android:padding="8dp">
+
+                <CheckBox
+                    android:id="@+id/cb_trace_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:button="@drawable/btn_trace"
+                    android:checked="false"
+                    />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </merge>
+</layout>
