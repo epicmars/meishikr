@@ -1,1 +1,1 @@
-include ':app', ':server', ':tools', ':Base', ':Component', ':sample', ':Data', ':Common', ':Domain'
+include ':app', ':Component', ':sample', ':Data', ':Common', ':Domain'

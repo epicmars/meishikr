@@ -8,8 +8,8 @@ import android.widget.Toast;
 
 import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.meishikr.app.R;
-import com.meishikr.app.base.adapter.BaseViewHolder;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.adapter.BaseViewHolder;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.ViewHolderBlogBinding;
 import com.meishikr.app.model.api.BlogApi;
 import com.meishikr.app.domain.dto.req.ReqPostBlog;

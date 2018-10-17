@@ -11,8 +11,8 @@ import com.facebook.imagepipeline.common.ResizeOptions;
 import com.facebook.imagepipeline.request.ImageRequest;
 import com.facebook.imagepipeline.request.ImageRequestBuilder;
 import com.meishikr.app.R;
-import com.meishikr.app.base.adapter.BaseViewHolder;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.adapter.BaseViewHolder;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.ViewHolderImageFileEntryBinding;
 import com.sin2pi.brick.components.gallery.ImageFileEntry;
 

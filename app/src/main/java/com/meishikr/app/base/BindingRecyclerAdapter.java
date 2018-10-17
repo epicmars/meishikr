@@ -1,7 +1,7 @@
 package com.meishikr.app.base;
 
-import com.meishikr.app.base.adapter.BaseViewHolder;
-import com.meishikr.app.base.adapter.RecyclerAdapter;
+import com.sin2pi.brick.components.base.adapter.BaseViewHolder;
+import com.sin2pi.brick.components.base.adapter.RecyclerAdapter;
 
 /**
  * Created by yinhang on 2016/12/22.

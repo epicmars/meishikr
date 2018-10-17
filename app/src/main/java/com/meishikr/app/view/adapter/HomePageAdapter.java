@@ -15,9 +15,8 @@ import com.meishikr.app.view.activity.home.NewsFragment;
  */
 public class HomePageAdapter extends FragmentStatePagerAdapter {
 
-    // // TODO: 2016/12/24 为什么不能直接持有fragment
     private Context context;
-    private static final int[] titles = {R.string.meishikr, R.string.lamp, R.string.rank};
+    private static final int[] titles = {R.string.meishikr, R.string.blog, R.string.lamp, };
 
     public HomePageAdapter(Context context, FragmentManager manager){
         super(manager);

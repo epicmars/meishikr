@@ -11,8 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.meishikr.app.application.MeishikrApp;
-import com.meishikr.app.base.annotation.BindLayout;
-import com.meishikr.app.base.fragment.AbstractFragment;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.fragment.AbstractFragment;
 import com.meishikr.app.di.component.ActivityComponent;
 import com.meishikr.app.di.component.DaggerActivityComponent;
 import com.meishikr.app.di.module.ActivityModule;

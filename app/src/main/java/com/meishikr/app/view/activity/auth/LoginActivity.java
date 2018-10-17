@@ -26,7 +26,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.meishikr.app.R;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.ActivityLoginBinding;
 import com.meishikr.app.viewmodel.LoginViewModel;
 import com.meishikr.app.viewmodel.event.EventLogin;

@@ -3,7 +3,7 @@ package com.meishikr.app.view.activity.blog;
 import android.os.Bundle;
 
 import com.meishikr.app.R;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.ContentBlogPreviewBinding;
 import com.meishikr.app.base.BaseFragment;
 

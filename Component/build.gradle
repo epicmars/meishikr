@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.3"
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 24
+        minSdkVersion rootProject.ext.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.androidTargetSdkVersion
         versionCode 1
         versionName "1.0"
     }
@@ -16,20 +16,30 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.2.1'
+
+    // android support library
+    compile "com.android.support:appcompat-v7:${androidSupportLibraryVersion}"
+    compile "com.android.support:support-v4:${androidSupportLibraryVersion}"
+    compile "com.android.support:appcompat-v7:${androidSupportLibraryVersion}"
+    compile "com.android.support:design:${androidSupportLibraryVersion}"
+    compile "com.android.support:recyclerview-v7:${androidSupportLibraryVersion}"
+    compile "com.android.support:customtabs:${androidSupportLibraryVersion}"
+    compile "com.android.support:support-annotations:${androidSupportLibraryVersion}"
 
     compile project(':Common')
-    compile project(":Base")
     // timber log
     compile 'com.jakewharton.timber:timber:4.1.1'
     // fresco
     compile 'com.facebook.fresco:fresco:0.11.0'
     // rxandroid
     compile 'io.reactivex:rxandroid:1.1.0'
-
 }

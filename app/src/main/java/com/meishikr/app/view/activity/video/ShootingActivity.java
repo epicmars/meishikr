@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.meishikr.app.R;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.ActivityShootingBinding;
 import com.meishikr.app.base.BaseActivity;
 

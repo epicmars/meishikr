@@ -3,8 +3,8 @@ package com.meishikr.app.view.viewholder;
 import android.view.View;
 
 import com.meishikr.app.R;
-import com.meishikr.app.base.adapter.BaseViewHolder;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.adapter.BaseViewHolder;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.ViewHolderLampBinding;
 import com.meishikr.app.domain.entity.post.Lamp;
 

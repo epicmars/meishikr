@@ -26,7 +26,7 @@ import android.widget.TextView;
 
 import com.meishikr.app.R;
 import com.meishikr.app.base.BaseActivity;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.ActivityRegisterBinding;
 import com.meishikr.app.viewmodel.RegisterViewModel;
 

@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.meishikr.app.R;
-import com.meishikr.app.base.adapter.BaseViewHolder;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.adapter.BaseViewHolder;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.ViewHolderParagraphItemBinding;
 import com.meishikr.app.domain.entity.post.Blog;
 import com.meishikr.app.domain.interactor.post.LoadOneBlogCase;

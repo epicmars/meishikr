@@ -13,7 +13,7 @@ import android.view.View;
 
 import com.amap.api.maps.AMap;
 import com.meishikr.app.R;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.ActivityMapBinding;
 import com.meishikr.app.domain.repository.CurrentUserRepo;
 import com.meishikr.app.base.BaseActivity;

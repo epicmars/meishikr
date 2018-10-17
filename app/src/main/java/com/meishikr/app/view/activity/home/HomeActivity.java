@@ -11,7 +11,7 @@ import android.view.MenuItem;
 
 import com.meishikr.app.R;
 import com.meishikr.app.base.BaseActivity;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.ActivityHomeBinding;
 import com.meishikr.app.view.activity.auth.LoginActivity;
 import com.meishikr.app.view.activity.auth.RegisterActivity;

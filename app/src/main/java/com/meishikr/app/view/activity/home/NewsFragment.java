@@ -2,7 +2,7 @@ package com.meishikr.app.view.activity.home;
 
 import com.meishikr.app.R;
 import com.meishikr.app.base.BaseFragment;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.FragmentNewsBinding;
 
 /**
@@ -12,4 +12,6 @@ import com.meishikr.app.databinding.FragmentNewsBinding;
 
 @BindLayout(R.layout.fragment_news)
 public class NewsFragment extends BaseFragment<FragmentNewsBinding> {
+
+
 }

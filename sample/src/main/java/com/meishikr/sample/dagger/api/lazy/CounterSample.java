@@ -9,7 +9,7 @@ import static com.meishikr.sample.dagger.api.lazy.DaggerCounterComponent.*;
 public class CounterSample {
 
     public static void main(String[] args) {
-        CounterComponent component = create();
+        CounterComponent component = DaggerCounterComponent.create();
 //        component.directCounter().print();
 //        component.directCounter().print();
 

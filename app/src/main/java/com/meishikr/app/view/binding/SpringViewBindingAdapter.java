@@ -18,7 +18,7 @@ public class SpringViewBindingAdapter {
         void onLoadMore();
     }
 
-    @BindingAdapter(value = {"bind:onRefresh", "bind:onLoadMore"}, requireAll = false)
+    @BindingAdapter(value = {"onRefresh", "onLoadMore"}, requireAll = false)
     public static void setRefreshListener(SpringView springView, OnRefresh onRefresh, OnLoadMore onLoadMore) {
         final SpringView.OnFreshListener onFreshListener;
         if (null == onRefresh && null == onLoadMore) {

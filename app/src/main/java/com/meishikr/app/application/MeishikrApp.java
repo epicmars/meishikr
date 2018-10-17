@@ -10,7 +10,7 @@ import android.support.multidex.MultiDexApplication;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.stetho.Stetho;
 import com.meishikr.app.BuildConfig;
-import com.meishikr.app.base.utils.AppUtils;
+import com.sin2pi.brick.components.base.utils.AppUtils;
 import com.meishikr.app.di.component.AppComponent;
 import com.meishikr.app.di.component.DaggerAppComponent;
 import com.meishikr.app.di.module.AppModule;

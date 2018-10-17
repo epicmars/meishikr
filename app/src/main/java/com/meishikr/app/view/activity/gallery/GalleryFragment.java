@@ -8,8 +8,8 @@ import android.support.v7.widget.GridLayoutManager;
 import android.view.View;
 
 import com.meishikr.app.R;
-import com.meishikr.app.base.adapter.RecyclerAdapter;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.adapter.RecyclerAdapter;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.FragmentGalleryBinding;
 import com.meishikr.app.base.BaseFragment;
 import com.meishikr.app.view.viewholder.ImageFileEntryViewHolder;

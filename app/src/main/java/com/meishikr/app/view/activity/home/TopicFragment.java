@@ -8,8 +8,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
 
 import com.meishikr.app.R;
-import com.meishikr.app.base.adapter.RecyclerAdapter;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.adapter.RecyclerAdapter;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.FragmentTopicBinding;
 import com.meishikr.app.domain.entity.post.Topic;
 import com.meishikr.app.base.BaseFragment;

@@ -10,8 +10,8 @@ import android.view.MenuItem;
 
 import com.meishikr.app.R;
 import com.meishikr.app.application.Consts;
-import com.meishikr.app.base.adapter.RecyclerAdapter;
-import com.meishikr.app.base.annotation.BindLayout;
+import com.sin2pi.brick.components.base.adapter.RecyclerAdapter;
+import com.sin2pi.brick.components.base.annotation.BindLayout;
 import com.meishikr.app.databinding.ActivityLampEditBinding;
 import com.meishikr.app.domain.entity.post.Lamp;
 import com.meishikr.app.domain.entity.post.Photo;
